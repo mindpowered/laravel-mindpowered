@@ -1,0 +1,23 @@
+{
+    "name": "mindpowered/laravel-mindpowered",
+    "description": "Contains Packages by Mind Powered Corporation",
+    "license": "CPAL-1.0",
+    "autoload": {
+        "psr-4": {
+            "mindpowered\\laravel\\MindPowered": "src/"
+        }
+    },
+    "require": {
+        "mindpowered/maglev": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mindpowered\\laravel\\MindPowered\\MindPoweredServiceProvider"
+            ],
+            "aliases": {
+                "MindPowered": "mindpowered\\laravel\\MindPowered\\Facades\\MindPowered"
+            }
+        }
+    }
+}
